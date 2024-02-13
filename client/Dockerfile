@@ -30,7 +30,7 @@ RUN apt-get update \
 ENV LANG ru_RU.UTF-8
 ENV LANGUAGE ru_RU:ru
 ENV LC_ALL ru_RU.UTF-8
-
+// Ошибка в этой строке
 RUN /download.sh "$ONEC_USERNAME" "$ONEC_PASSWORD" "$ONEC_VERSION" "client"
 
 # Начало основной стадии сборки
